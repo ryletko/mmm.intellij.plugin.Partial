@@ -1,6 +1,6 @@
 plugins {
   id("java")
-  id("org.jetbrains.intellij") version "1.11.0"
+  id("org.jetbrains.intellij") version "1.15.0"
 }
 
 group "com.andreycizov.partialnav"
@@ -26,8 +26,8 @@ tasks {
   }
 
   patchPluginXml {
-    sinceBuild.set("223")
-    untilBuild.set("223.*")
+    sinceBuild.set("232")
+    untilBuild.set("232.*")
 
     // TODO Not sure this works! But leaving to retain old code
     changeNotes.value("""
